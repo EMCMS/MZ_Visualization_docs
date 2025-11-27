@@ -41,4 +41,6 @@ add "https://gitlab.com/EMCMS_UVA/MZ_Visualization.jl"
 
 We have created a simple Google Colab with some example plots and explanation that should help you to get started. For details explanation of each function, please take a look at this documentation. 
 
+To use the colab, you can get the demo files using this Zenodo link: [https://zenodo.org/records/17544458](https://zenodo.org/records/17544458)
+
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1kmM4H97BIs-Fe6SStt0JOufiA_EbCcfv?usp=sharing)
