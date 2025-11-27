@@ -1,35 +1,44 @@
 ---
 title: Home
 layout: home
+nav_order: 2
+has_children: false
 ---
 
-This is a *bare-minimum* template to create a Jekyll site that uses the [Just the Docs] theme. You can easily set the created site to be published on [GitHub Pages] – the [README] file explains how to do that, along with other details.
+# MZ_Visualization.jl
 
-If [Jekyll] is installed on your computer, you can also build and preview the created site *locally*. This lets you test changes before committing them, and avoids waiting for GitHub Pages.[^1] And you will be able to deploy your local build to a different platform than GitHub Pages.
+A powerful, high-performance Julia package for visualizing high-resolution Mass Spectrometry (MS) data. Built on CairoMakie, MZ_Visualization provides fast, flexible, and publication-quality plots for all your MS data analysis needs. Currently, for reading *XML* files the package is dependent on the package [*MS_Import.jl*](https://gitlab.com/EMCMS_UVA/MS_Import.jl), which only imports files in *mzXML* format. If you would like to use other file formats, just make sure that the imported file has the same format and keys. 
 
-More specifically, the created site:
+# Features
 
-- uses a gem-based approach, i.e. uses a `Gemfile` and loads the `just-the-docs` gem
-- uses the [GitHub Pages / Actions workflow] to build and publish the site on GitHub Pages
+The *MZ_Visualization.jl* is meant to provide you with a suite of visulaization tools for raw data, pre-processed data (e.g. feature lists), and annotations. At the moment the modules related to pre-processed data and annotation are under development. 
 
-Other than that, you're free to customize sites that you create with this template, however you like. You can easily change the versions of `just-the-docs` and Jekyll it uses, as well as adding further plugins.
+# Installation 
 
-[Browse our documentation][Just the Docs] to learn more about how to use this theme.
+For installation, please follow the below instructions: 
 
-To get started with creating a site, simply:
+```julia 
 
-1. click "[use this template]" to create a GitHub repository
-2. go to Settings > Pages > Build and deployment > Source, and select GitHub Actions
+using Pkg
+Pkg.add(url="https://gitlab.com/EMCMS_UVA/MS_Import.jl")
+Pkg.add(url="https://gitlab.com/EMCMS_UVA/MZ_Visualization.jl")
+println("MZ_Visualization.jl installed successfully.")
 
-If you want to maintain your docs in the `docs` directory of an existing project repo, see [Hosting your docs from an existing project repo](https://github.com/just-the-docs/just-the-docs-template/blob/main/README.md#hosting-your-docs-from-an-existing-project-repo) in the template README.
+``` 
 
-----
+or 
 
-[^1]: [It can take up to 10 minutes for changes to your site to publish after you push the changes to GitHub](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/creating-a-github-pages-site-with-jekyll#creating-your-site).
+```julia
 
-[Just the Docs]: https://just-the-docs.github.io/just-the-docs/
-[GitHub Pages]: https://docs.github.com/en/pages
-[README]: https://github.com/just-the-docs/just-the-docs-template/blob/main/README.md
-[Jekyll]: https://jekyllrb.com
-[GitHub Pages / Actions workflow]: https://github.blog/changelog/2022-07-27-github-pages-custom-github-actions-workflows-beta/
-[use this template]: https://github.com/just-the-docs/just-the-docs-template/generate
+] 
+
+add "https://gitlab.com/EMCMS_UVA/MS_Import.jl"
+add "https://gitlab.com/EMCMS_UVA/MZ_Visualization.jl"
+
+``` 
+
+# Demonstration
+
+We have created a simple Google Colab with some example plots and explanation that should help you to get started. For details explanation of each function, please take a look at this documentation. 
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1kmM4H97BIs-Fe6SStt0JOufiA_EbCcfv?usp=sharing)
