@@ -1,8 +1,9 @@
 ---
 layout: default
 title: Spectra
-nav_order: 4
 parent: Raw Data Visualization
+nav_order: 2
+
 ---
 
 You can visualize the full scan spectra of MS1, MSn, either based on location (i.e. scan number or the retention time) or based on the precursor ion/window.

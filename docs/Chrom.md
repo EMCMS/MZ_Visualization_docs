@@ -1,8 +1,9 @@
 ---
 layout: default
 title: Chromatogram
-nav_order: 3
 parent: Raw Data Visualization
+nav_order: 1
+
 ---
 
 You can visualize the full chromatograms via either the 3D plot, Total Ion Current (TIC), eXtracted Ion Chromatograms (XIC), or Base Ion Chromatogram (BIC). 
